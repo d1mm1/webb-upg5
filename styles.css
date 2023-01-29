@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+
+body{
+    
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container{
+    background-color: #FCD7AD;
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 1200px;
+}
+
+header{
+    background-color: #A57548;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}  
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #D1A67B;
+    background-color: #FCD7AD;
+    border-radius: 5px;
+    text-align: center;
+    padding: 3px 8px;
+}
+
+header nav a:hover{
+    color: #8C6640;
+    background-color:  #37291B;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+    width: 80%;
+}
+
+footer{
+    background-color: #62482E;
+    color: #FCD7AD;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media(min-width:600px){
+
+
+    header nav{
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    main{
+        display: flex;
+        gap: 80px;
+        margin: 0 30px;
+    }
+}
+
+/*for form*/
+
+form{
+   display: grid;
+   grid-template-columns: 1fr; 
+   margin: 0 auto;
+}
+
+.send-button-container{
+    margin: 0 auto;
+}
+
+.send-button-container input {
+    width: 30%;
+    min-width: 100px;
+}
+
+label{
+    display: block;
+    padding-bottom: 8px;
+}
+
+@media(min-width:600px){
+    form{
+        grid-template-columns: 1fr 1fr;
+    }
+    .send-button-container{
+        grid-column: span 2;
+    }
+}
