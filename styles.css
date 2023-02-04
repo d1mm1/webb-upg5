@@ -29,7 +29,7 @@ header nav{
 
 header nav a{
     text-decoration: none;
-    color: #D1A67B;
+    color: #000;
     background-color: #FCD7AD;
     border-radius: 5px;
     text-align: center;
@@ -51,7 +51,7 @@ article{
 
 footer{
     background-color: #62482E;
-    color: #FCD7AD;
+    color: #a57548;
     display: flex;
     justify-content: center;
     gap: 10px;
